@@ -1,0 +1,74 @@
+*{ margin:0;
+  padding:0;
+  box-sizing: border-box;
+
+}
+html {
+  height: 100%;
+}
+body {
+ 
+  font-family: sans-serif;
+  background-image: linear-gradient(
+    to right bottom,
+    rgba(0, 0, 0, 0.5),
+    rgba(0, 0, 0, 0.5)
+  ),
+  url("./architecture-buildings-night-city-wallpaper-2560x1080_14.jpg");
+color: #03e9f4;;
+  /* background: linear-gradient(#141e30, #243b55); */
+}
+
+.container {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  width: 400px;
+  padding: 40px;
+  transform: translate(-50%, -50%);
+  background: rgba(0,0,0,.7);
+  box-sizing: border-box;
+  box-shadow: 0 15px 25px rgba(0,0,0,.6);
+  border-radius: 10px;
+}
+
+.flex-column{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+.flex-row{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.container .profile .img  img{
+  width: 4rem;
+  height: 4rem;
+  border-radius: 5rem;
+  margin: 2rem;
+}
+.container .methods button{
+  margin-top: 2rem;
+  padding: .7rem 1.5rem;
+  border-radius: 5rem;
+  width: 6.5rem;
+}
+.grid{
+  display: grid;
+  grid-template-columns: repeat(3,1fr);
+}
+
+.container .methods .show{
+  padding: .5rem;
+  margin-top: 2rem;
+  border-radius: 5rem;
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+
