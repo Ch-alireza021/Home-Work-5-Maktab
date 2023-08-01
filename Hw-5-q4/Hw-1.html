@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./Hw-1.css">
+    <title>Document</title>
+</head>
+<body>
+  <div class="container">
+    <form class="flex" id="form">
+      <h1>Show notification</h1>
+      <!-- show message -->
+      <textarea rows="4rem" cols="30rem" required name="showMassage"></textarea>
+      <!-- <input type="text" id="text" name="text" required> -->
+      <!-- top or nottom location -->
+      <div class="distance">
+        <label for="top">distance</label>
+        <input type="number" name="distance1">
+        <!-- top -->
+        <input type="radio" name="loc1" value="top" id="top">
+        <label for="top">top</label>
+        <!-- bottom -->
+        <input type="radio" name="loc1" value="bottom" id="bottom">
+        <label for="bottom">bottom</label>
+      </div>
+      <!-- left or right -->
+      <div class="distance">
+        <label for="top">distance</label>
+        <input type="number" name="distance2">
+        <!-- left -->
+        <input type="radio" name="loc2" value="left" id="left">
+        <label for="left">left</label>
+          <!-- right -->
+          <input type="radio" name="loc2" value="right" id="right">
+          <label for="right">right</label>
+      </div>
+      <!-- class -->
+      <div class="class">
+        <label for="class"> class </label>
+        <input type="text" id="class" name="class">
+      </div>
+      <div class="submit">
+        <input type="submit" id="submit"> 
+      </div>
+    </form>
+  </div>
+
+  <div class="main">
+  <pre id="toast" >
+  </pre>
+  </div>
+
+  <script src="./Hw-1.js"></script>  
+</body>
+</html>
+
+
+
